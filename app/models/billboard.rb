@@ -5,5 +5,5 @@ class Billboard < ApplicationRecord
   has_many :songs, dependent: :destroy
 
   # make sure that data comes in following certain constraints.
-  validates :name, :title, :album, presence: true
+  validates :title, :description, presence: true
 end
