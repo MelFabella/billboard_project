@@ -1,6 +1,6 @@
 class BillboardsController < ApplicationController
   def index
-    @billboard = Billboard.all 
+    @billboards = Billboard.all 
   end
 
   def show
