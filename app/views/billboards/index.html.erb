@@ -1,20 +1,11 @@
 <h1>All Billboard</>
-<%= link_to 'Create billboard', new_billboard_path %>
-
+<%= link_to 'Add Billboards', new_billboard_path %>
+<hr />
+<h2><%= @billboards.length <= 0 ? "no billboards" : '' %></h2>
 <ul>
   <% @billboards.each do |billboard| %>
     <li>
-      <%= link_to billboard.title, biillboard %> 
+      <%= link_to billboard.name, billboard %>
     </li>
-  <% end %>
-</ul> 
-
-
-
-<!-- non echoing -->
-<% 4-2 %>
-
-<!-- echoing -->
-<%=  %>
-
-# <%# %> comment erb tag
+  <% end %>  
+</ul>

@@ -1,9 +1,9 @@
-<h1><%= @billboard.id ? 'Edit billboard' : 'Create billboard' %></h1>
-<hr />
 
-<%= form_for @billboard do |f| %> 
+  <%= form_for @billboard do |f| %>
+
+<%#= form_with(model: @billboard, local: true, class: 'styled form') do |f| %>
   <%= f.label :title %> 
-  <%= f.text_field :title, required: true %> 
-  
-  <%= f.submit %> 
-<% end %> 
+  <%= f.text_field :title, required: true, placeholder: 'billboard title' %>
+
+  <%= f.submit %>
+<% end %>

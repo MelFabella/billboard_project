@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :artists
   end
   # dont embed your routes deep
-  resources :billboards do
+  resources :artists do
     resources :songs
   end
 end

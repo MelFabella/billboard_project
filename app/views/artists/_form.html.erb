@@ -1,10 +1,6 @@
-<h1><%= @billboard.id ? 'Edit Billboard' : 'Create Billboard' %></h1>
-<hr />
-<%= form_for @billboard do |f| %> 
-  <%= f.label :title %> 
-  <%= f.text_field :title, required: true, autofocus:true %>
-  <br />
-  <%= f.label :rank %>
-  <%= f.rank_area :rank, required:true %> 
-  <%= f.submit %> 
-<% end %> 
+<%= form_for @artist do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+
+  <%= f.submit%>
+<% end %>
